@@ -1,4 +1,4 @@
-# FPGA-TETRIS-VHDL  
+# FPGA-TETRIS-VHDL ปี 2 เทอม 1  
   
 เป็นโปรเจคของวิชา DIGITAL SYSTEM FUNDAMENTALS  
 
