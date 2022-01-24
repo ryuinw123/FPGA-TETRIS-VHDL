@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 17 23:07:44 2020
+# Process ID: 14176
+# Log file: C:/XILIX/RVGA/planAhead_run_1/planAhead.log
+# Journal file: C:/XILIX/RVGA/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/XILIX/RVGA/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P24 [get_ports {RGB[0]}]
+endgroup
+startgroup
+set_property package_pin P22 [get_ports {RGB[1]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {RGB[2]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports HSYNC]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports VSYNC]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports RST]
+endgroup
+save_constraints

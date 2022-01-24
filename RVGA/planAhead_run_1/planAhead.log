@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 17 23:07:44 2020
+# Process ID: 14176
+# Log file: C:/XILIX/RVGA/planAhead_run_1/planAhead.log
+# Journal file: C:/XILIX/RVGA/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/SEC/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/SEC/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/SEC/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/XILIX/RVGA/pa.fromHdl.tcl
+# create_project -name RVGA -dir "C:/XILIX/RVGA/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "vga_driver.ucf" [current_fileset -constrset]
+Adding file 'C:/XILIX/RVGA/vga_driver.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {vga_driver.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top vga_driver $srcset
+# add_files [list {vga_driver.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "F:/SEC/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "F:/SEC/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/XILIX/RVGA/vga_driver.vhd" into library work
+Loading clock regions from F:/SEC/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from F:/SEC/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from F:/SEC/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from F:/SEC/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from F:/SEC/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from F:/SEC/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : F:/SEC/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/XILIX/RVGA/vga_driver.ucf]
+Finished Parsing UCF File [C:/XILIX/RVGA/vga_driver.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 571316b0
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 666.258 ; gain = 157.574
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P24 [get_ports {RGB[0]}]
+endgroup
+startgroup
+set_property package_pin P22 [get_ports {RGB[1]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {RGB[2]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports HSYNC]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports VSYNC]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports RST]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/XILIX/RVGA\planAhead_pid14176.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Nov 17 23:09:27 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead
