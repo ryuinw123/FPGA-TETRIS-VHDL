@@ -6,4 +6,4 @@
   
 ใช้ MATLAB ในการแปลงรูปไปใส่ใน RAM  
   
-Project Link https://www.youtube.com/watch?v=o_MICWkjWAo  
+Project Video Link https://www.youtube.com/watch?v=o_MICWkjWAo  
